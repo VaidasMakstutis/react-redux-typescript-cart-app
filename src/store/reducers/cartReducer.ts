@@ -1,9 +1,5 @@
 import { ADD_ITEM, DELETE_ITEM } from "../types";
 
-export interface IState {
-  numOfItems: number;
-}
-
 const initialState = {
   numOfItems: 0
 };

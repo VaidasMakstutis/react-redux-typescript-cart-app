@@ -1,10 +1,10 @@
 import React from "react";
 import { addItem, deleteItem } from "../store/actions/cartActions";
 import { useDispatch, useSelector } from "react-redux";
-import { IState } from "../store/reducers/cartReducer";
+import { State } from "../store/types";
 
 const Cart = () => {
-  const state = useSelector((state: IState) => state);
+  const state = useSelector((state: State) => state);
   const dispatch = useDispatch();
   return (
     <div className="text-center mt-4">
